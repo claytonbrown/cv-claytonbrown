@@ -1546,9 +1546,9 @@ function App() {
                   <Github className="w-3.5 h-3.5" />
                   <span>career-ops</span>
                   <Star className="w-3 h-3 text-yellow-500" />
-                  {/* hero-stats:career-ops:stars */}<span className="font-medium">63.5K</span>
+                  {/* hero-stats:career-ops:stars */}<span className="font-medium">68.8K</span>
                   <GitFork className="w-3 h-3" />
-                  {/* hero-stats:career-ops:forks */}<span>12.5K</span>
+                  {/* hero-stats:career-ops:forks */}<span>13.0K</span>
                 </Link>
               </div>
 

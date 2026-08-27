@@ -199,7 +199,7 @@ export const articleRegistry: ArticleConfig[] = [
     component: () => import('../JacoboAgent.tsx'),
     seoMeta: {
       datePublished: '2026-02-25',
-      dateModified: '2026-07-30',
+      dateModified: '2026-08-11',
       keywords: ['multi-agent AI', 'multi agent orchestration', 'AI agent', 'sub-agent architecture', 'tool calling production', 'n8n workflows', 'n8n ai agent', 'ai agent case study', 'customer service AI', 'WhatsApp AI agent', 'ElevenLabs voice agent', 'voice AI', 'HITL', 'human in the loop', 'ia para pymes', 'agente ia whatsapp', 'multi-model orchestration', 'OpenRouter', 'FDE portfolio', 'solutions architect AI', 'AI production manager', 'enterprise AI patterns', 'voice AI platform', 'conversational AI case study', 'agentic workflows'],
       articleType: 'TechArticle',
       articleTags: 'AI agent,multi-agent,n8n,ElevenLabs,HITL,tool calling,WhatsApp,voice AI',
@@ -557,7 +557,7 @@ export const articleRegistry: ArticleConfig[] = [
         { '@type': 'BlogPosting', name: 'santifer/career-ops — Claude Code, Playwright, Chromium (CSDN)', url: 'https://blog.csdn.net/Dontla/article/details/159930707' },
         { '@type': 'WebPage', name: 'GitHub Trending Weekly 2026-04-08 — Shareuhack', url: 'https://www.shareuhack.com/en/posts/github-trending-weekly-2026-04-08' },
         { '@type': 'WebPage', name: 'career-ops — AI Job Search CLI Tool (EveryDev.ai)', url: 'https://www.everydev.ai/tools/career-ops' },
-        { '@type': 'TechArticle', name: 'Agentic maintenance: how I run a 60,000-star open source repo with a fleet of AI agents', url: 'https://santifer.io/ai-agent-fleet' },
+        { '@type': 'TechArticle', name: 'Agentic maintenance: how I run an open source repo with a fleet of AI agents', url: 'https://santifer.io/ai-agent-fleet' },
         { '@type': 'WebPage', name: 'HN Top Links — Popular Stories from Hacker News', url: 'http://hntoplinks.com/week?page=216&sort=upvotes' },
         { '@type': 'TechArticle', name: 'Anthropic Claude Code — Agentic Coding', url: 'https://www.anthropic.com/claude-code' },
         { '@type': 'WebPage', name: 'Multi-agent system (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Multi-agent_system' },
@@ -582,11 +582,11 @@ export const articleRegistry: ArticleConfig[] = [
     titles: { es: 'Flota de Agentes IA', en: 'AI Agent Fleet' },
     seo: {
       es: {
-        title: 'Agentic maintenance: un repo de 60.000 estrellas con agentes IA',
+        title: 'Agentic maintenance: cómo dirijo un repo open source con una flota de agentes IA',
         description: 'Una flota de agentes Claude Code mantiene career-ops por las tardes y los fines de semana: triage, tests, review briefs y releases. Un día documentado y cómo replicarlo.',
       },
       en: {
-        title: 'Agentic Maintenance: How I Run a 60,000-Star Repo with AI Agents',
+        title: 'Agentic Maintenance: How I Run an Open Source Repo with a Fleet of AI Agents',
         description: 'A fleet of Claude Code agents maintains career-ops: triage, tests, review briefs and releases on evenings and weekends. The system, one documented day, and the playbook.',
       },
     },
@@ -595,6 +595,7 @@ export const articleRegistry: ArticleConfig[] = [
         'outgrew': 'El Desborde',
         'fleet': 'La Flota',
         'gates': 'Los Gates',
+        'cross-model': 'Auditoría Entre Modelos',
         'memory': 'La Memoria',
         'security': 'Seguridad',
         'infra-fails': 'Infra Falla',
@@ -614,6 +615,7 @@ export const articleRegistry: ArticleConfig[] = [
         'outgrew': 'The Overflow',
         'fleet': 'The Fleet',
         'gates': 'The Gates',
+        'cross-model': 'Cross-Model Audit',
         'memory': 'The Memory',
         'security': 'Security',
         'infra-fails': 'Infra Fails',

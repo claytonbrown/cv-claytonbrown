@@ -10,12 +10,12 @@
 
   <!-- Title -->
   <text x="40" y="56" font-size="30" font-weight="bold" fill="#232838">The fleet</text>
-  <text x="40" y="84" font-size="17" fill="#6B7280">How a 60K+ star repo runs on evenings and weekends of human time</text>
+  <text x="40" y="84" font-size="17" fill="#6B7280">How an open source repo runs on evenings and weekends of human time</text>
 
   <!-- Human maintainer column (accent, key element) -->
   <rect x="40" y="104" width="280" height="426" rx="10" fill="#C9573A" stroke="#C9573A" stroke-width="2"/>
   <text x="60" y="170" font-size="20" font-weight="bold" fill="#FAFAF7">Human maintainer</text>
-  <text x="60" y="200" font-size="17" fill="#FAFAF7">~4 h/week &#183;</text>
+  <text x="60" y="200" font-size="17" fill="#FAFAF7">evenings &#38; weekends &#183;</text>
   <text x="60" y="224" font-size="17" fill="#FAFAF7">strategic decisions only</text>
   <line x1="60" y1="246" x2="300" y2="246" stroke="#FAFAF7" stroke-width="1" opacity="0.55"/>
   <text x="60" y="280" font-size="17" fill="#FAFAF7">&#183; what enters the core</text>

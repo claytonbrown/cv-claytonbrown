@@ -143,8 +143,8 @@ export default function AiAgentFleet({ lang = 'en' }: { lang?: Lang }) {
         <img
           src="/ai-agent-fleet/fig-gates.svg"
           alt={lang === 'es'
-            ? 'El camino de una PR hasta el merge: ejecución en checkout limpio contra 1.667 aserciones, CI más CodeQL en vivo como gates bloqueantes, review brief con encaje de spec y mapa de colisiones, decisión humana con evidencia adjunta, merge, y solo tras exit 0 el anuncio público. Gates extra para first-timers, plugins y ficheros sensibles.'
-            : 'A pull request\'s path to merge: clean-checkout test run against 1,667 assertions, CI plus live CodeQL as blocking gates, review brief with spec-fit and collision map, human decision with evidence attached, then merge, and only after exit 0 the public announcement. Extra gates for first-time contributors, plugins and sensitive files.'}
+            ? 'El camino de una PR hasta el merge: ejecución en checkout limpio contra 5.624 aserciones, CI más CodeQL en vivo como gates bloqueantes, review brief con encaje de spec y mapa de colisiones, decisión humana con evidencia adjunta, merge, y solo tras exit 0 el anuncio público. Gates extra para first-timers, plugins y ficheros sensibles.'
+            : 'A pull request\'s path to merge: clean-checkout test run against 5,624 assertions, CI plus live CodeQL as blocking gates, review brief with spec-fit and collision map, human decision with evidence attached, then merge, and only after exit 0 the public announcement. Extra gates for first-time contributors, plugins and sensitive files.'}
           width={1200}
           height={675}
           loading="lazy"
@@ -155,6 +155,14 @@ export default function AiAgentFleet({ lang = 'en' }: { lang?: Lang }) {
         {/* ================================================================ */}
         {/*  SECURITY AND ISOLATION                                          */}
         {/* ================================================================ */}
+        {/* ================================================================ */}
+        /*  WHEN ONE MODEL AUDITS ANOTHER                                   */
+        {/* ================================================================ */}
+        <H2 id="cross-model">{s.crossModel.heading}</H2>
+        {s.crossModel.paras.map((p, i) => (
+          <Prose key={i}>{p}</Prose>
+        ))}
+
         <H2 id="security">{s.security.heading}</H2>
         {s.security.paras.map((p, i) => (
           <Prose key={i}>{p}</Prose>
