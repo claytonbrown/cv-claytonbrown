@@ -291,6 +291,55 @@ function validateRegistryConfig(config: ArticleConfig): Issue[] {
 // Global file checks
 // ---------------------------------------------------------------------------
 
+/**
+ * Guard de atrezzo (27-ago-2026): los claims muertos sobreviven dentro de SVG porque
+ * ningún barrido de prosa los lee. En un solo día se cazaron 4 casos: `~4 h/week`
+ * (violación viva del frame laboral, 5 semanas después de darlo por cerrado),
+ * `1.667 assertions`, `60K+` y `59K-star`.
+ *
+ * Regla adoptada: un asset con texto solo lleva cifras si las regenera el build desde
+ * datos vivos. Este guard verifica el TEXTO RENDERIZADO (<text>, <title>), nunca el
+ * fichero entero: las coordenadas de path producen cientos de falsos positivos.
+ */
+function validateAssetClaims(): Issue[] {
+  const issues: Issue[] = []
+  const svgs: string[] = []
+  const walkSvg = (dir: string) => {
+    for (const entry of readdirSync(dir, { withFileTypes: true })) {
+      const full = resolve(dir, entry.name)
+      if (entry.isDirectory()) walkSvg(full)
+      else if (entry.name.endsWith('.svg')) svgs.push(full)
+    }
+  }
+  try { walkSvg(dist) } catch { return issues }
+
+  // Claims con verdad externa que caducan. Cada patrón nace de un fallo real.
+  const banned: Array<{ re: RegExp; what: string }> = [
+    { re: /\d+\s*h(ours?|oras?)?\s*\/\s*(week|semana)|\d+\s+h(ours?|oras?)\s+(a|per)\s+(week|semana)|~\d+\s*h\b/i, what: 'claim de dedicación (frame laboral)' },
+    { re: /\b(631|680|122)\b/, what: 'cifra prohibida por canon v2' },
+    { re: /\b\d{1,3}[.,]?\d{0,3}K\+?\s*(star|estrella)/i, what: 'contador de estrellas (caduca; va en H1 cableado)' },
+    { re: /\b[\d.,]{3,}\s*(assertions?|aserciones)/i, what: 'nº de asserts (cambia en cada release)' },
+    { re: /\bverified\b/i, what: 'claim de verificación' },
+  ]
+
+  for (const file of svgs) {
+    const raw = readFileSync(file, 'utf-8')
+    // Solo texto renderizado: <text>…</text> y <title>…</title>
+    const rendered = [...raw.matchAll(/<(?:text|title)\b[^>]*>([\s\S]*?)<\/(?:text|title)>/g)]
+      .map(m => m[1].replace(/<[^>]+>/g, ' '))
+      .join(' | ')
+    if (!rendered) continue
+    for (const { re, what } of banned) {
+      const hit = rendered.match(re)
+      if (hit) {
+        const rel = file.replace(dist + '/', '')
+        issues.push({ severity: 'error', msg: `Claim caducable dentro de un asset: ${rel} → "${hit[0]}" (${what})`, skill: '/seo images' })
+      }
+    }
+  }
+  return issues
+}
+
 function validateGlobalFiles(): Issue[] {
   const issues: Issue[] = []
 
@@ -644,7 +693,7 @@ if (structuralIssues.length > 0) {
 }
 
 // Global checks
-const globalIssues = validateGlobalFiles()
+const globalIssues = [...validateGlobalFiles(), ...validateAssetClaims()]
 if (globalIssues.length > 0) {
   printIssues(globalIssues, 'Global files')
 } else {
