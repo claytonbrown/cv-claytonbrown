@@ -491,11 +491,11 @@ export const articleRegistry: ArticleConfig[] = [
     seo: {
       es: {
         title: 'career-ops: Agente IA que Automatiza Mi Búsqueda de Empleo',
-        description: 'Case study: agente IA multi-agente que evalúa ofertas con scoring multi-dimensional, crea CV con IA personalizados y automatiza aplicaciones. 740 ofertas evaluadas.',
+        description: 'Case study: sistema multi-agente que evalúa ofertas con scoring multi-dimensional, crea CV con IA y automatiza aplicaciones. 740 ofertas evaluadas.',
       },
       en: {
         title: 'career-ops: How I Built My Own AI Job Search Tool',
-        description: 'Case study: AI job search tool built as a multi-agent system. AI resume builder, multi-dimensional scoring, automated applications with HITL. 740 offers evaluated.',
+        description: 'Case study: AI job search tool built as a multi-agent system. AI resume builder, multi-dimensional scoring, automated applications. 740 offers evaluated.',
       },
     },
     sectionLabels: {
@@ -583,11 +583,11 @@ export const articleRegistry: ArticleConfig[] = [
     seo: {
       es: {
         title: 'Agentic maintenance: cómo dirijo un repo open source con una flota de agentes IA',
-        description: 'Una flota de agentes Claude Code mantiene career-ops por las tardes y los fines de semana: triage, tests, review briefs y releases. Un día documentado y cómo replicarlo.',
+        description: 'Una flota de agentes Claude Code mantiene career-ops por las tardes y los fines de semana: triage, tests, review briefs y releases. Un día documentado.',
       },
       en: {
         title: 'Agentic Maintenance: How I Run an Open Source Repo with a Fleet of AI Agents',
-        description: 'A fleet of Claude Code agents maintains career-ops: triage, tests, review briefs and releases on evenings and weekends. The system, one documented day, and the playbook.',
+        description: 'A fleet of Claude Code agents maintains career-ops on evenings and weekends: triage, tests, review briefs and releases. One documented day, plus the playbook.',
       },
     },
     sectionLabels: {

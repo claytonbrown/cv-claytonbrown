@@ -3,13 +3,13 @@ export const seo = {
     title:
       'santifer | Applied AI Operator · Builder of career-ops',
     description:
-      'Multi-agent systems builder. Applied AI Operator con 2 case studies en producción. Creador de career-ops (68.8K+ ⭐). 16 años llevando IA a producción.',
+      'Multi-agent systems builder. Applied AI Operator con 2 case studies en producción. Creador de career-ops (69.5K+ ⭐). 16 años llevando IA a producción.',
   },
   en: {
     title:
       'santifer | Applied AI Operator · Builder of career-ops',
     description:
-      'Multi-agent systems builder. Applied AI Operator with 2 production case studies live. Creator of career-ops (68.8K+ ⭐). 16 years shipping AI at scale.',
+      'Multi-agent systems builder. Applied AI Operator with 2 production case studies live. Creator of career-ops (69.5K+ ⭐). 16 years shipping AI at scale.',
   },
 };
 
@@ -190,8 +190,8 @@ export const translations = {
           tech: ['Claude Code', 'Batch Architecture', 'WebSearch', 'HITL Design'],
           link: 'career-ops.org',
           linkUrl: 'https://career-ops.org?utm_source=santifer.io&utm_medium=projects-grid&utm_campaign=home',
-          stars: '68.8K',
-          forks: '13.0K',
+          stars: '69.5K',
+          forks: '13.1K',
           caseStudyUrl: '/career-ops',
           caseStudyLabel: 'Leer: AI Job Search multi-agente',
         },
@@ -203,7 +203,7 @@ export const translations = {
           tech: ['Next.js 16', 'React 19', 'Tailwind v4', 'GitHub GraphQL', 'GitHub Actions', 'Web Audio', 'Polar', 'Vercel'],
           link: 'warpchart.dev',
           linkUrl: 'https://warpchart.dev?utm_source=santifer.io&utm_medium=projects-grid&utm_campaign=home',
-          stars: '12',
+          stars: '13',
         },
         {
           title: 'santifer.io',
@@ -212,8 +212,8 @@ export const translations = {
           desc: 'CV interactivo con SDLC aumentado con IA. Construido con **Claudeable**, monitorizado con **Claude Pulse**, animaciones debuggeadas con **Claude Eye**. Prerender SSR, i18n bilingüe y SEO automatizado.',
           tech: ['React 19', 'TypeScript', 'Tailwind', 'Vite', 'Motion', 'Vercel'],
           link: 'github.com/santifer/cv-santiago',
-          stars: '818',
-          forks: '274',
+          stars: '822',
+          forks: '275',
         },
         {
           title: 'Self-Healing Chatbot',
@@ -591,9 +591,9 @@ export const translations = {
       quoteViews: '1.7M',
       quoteUrl: 'https://x.com/garrytan/status/2040891664617848993',
       replies: '107',
-      retweets: '500',
+      retweets: '501',
       likes: '3.9K',
-      views: '557.7K',
+      views: '557.9K',
       cta: 'Ver en X',
       url: 'https://x.com/santifer/status/2041403685696053741',
     },
@@ -1064,8 +1064,8 @@ export const translations = {
           tech: ['Claude Code', 'Batch Architecture', 'WebSearch', 'HITL Design'],
           link: 'career-ops.org',
           linkUrl: 'https://career-ops.org?utm_source=santifer.io&utm_medium=projects-grid&utm_campaign=home',
-          stars: '68.8K',
-          forks: '13.0K',
+          stars: '69.5K',
+          forks: '13.1K',
           caseStudyUrl: '/career-ops-system',
           caseStudyLabel: 'Case Study: AI Job Search',
         },
@@ -1077,7 +1077,7 @@ export const translations = {
           tech: ['Next.js 16', 'React 19', 'Tailwind v4', 'GitHub GraphQL', 'GitHub Actions', 'Web Audio', 'Polar', 'Vercel'],
           link: 'warpchart.dev',
           linkUrl: 'https://warpchart.dev?utm_source=santifer.io&utm_medium=projects-grid&utm_campaign=home',
-          stars: '12',
+          stars: '13',
         },
         {
           title: 'santifer.io',
@@ -1086,8 +1086,8 @@ export const translations = {
           desc: 'Interactive CV with AI-augmented SDLC. Built with **Claudeable**, monitored with **Claude Pulse**, animations debugged with **Claude Eye**. SSR prerender, bilingual i18n, and automated SEO.',
           tech: ['React 19', 'TypeScript', 'Tailwind', 'Vite', 'Motion', 'Vercel'],
           link: 'github.com/santifer/cv-santiago',
-          stars: '818',
-          forks: '274',
+          stars: '822',
+          forks: '275',
         },
         {
           title: 'Self-Healing Chatbot',
@@ -1461,9 +1461,9 @@ export const translations = {
       quoteViews: '1.7M',
       quoteUrl: 'https://x.com/garrytan/status/2040891664617848993',
       replies: '107',
-      retweets: '500',
+      retweets: '501',
       likes: '3.9K',
-      views: '557.7K',
+      views: '557.9K',
       cta: 'View on X',
       url: 'https://x.com/santifer/status/2041403685696053741',
     },
