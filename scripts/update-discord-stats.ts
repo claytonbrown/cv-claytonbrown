@@ -176,6 +176,18 @@ async function main() {
     console.log(`  ✓ ${target.description.padEnd(24)} ${currentNum} → ${newNum}`)
   }
 
+  // llms.txt (doctrina §16, search-ops): la fecha va por FUENTE y solo se refresca tras un
+  // fetch bueno — este punto está pasado el `if (members === null) return`, así que una cifra
+  // de Discord vieja nunca luce fecha de hoy.
+  const asOfIso = new Date().toISOString().slice(0, 10)
+  const llmsForDate = fileCache.get(LLMS_TXT) ?? readFileSync(LLMS_TXT, 'utf-8')
+  const llmsDated = llmsForDate.replace(/Discord as of \d{4}-\d{2}-\d{2}/g, `Discord as of ${asOfIso}`)
+  if (llmsDated !== llmsForDate) {
+    fileCache.set(LLMS_TXT, llmsDated)
+    fileChanged.set(LLMS_TXT, true)
+    console.log(`  ✓ llms.txt Discord as-of date → ${asOfIso}`)
+  }
+
   let anyWritten = false
   for (const [file, changed] of fileChanged) {
     if (changed) {

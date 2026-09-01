@@ -339,6 +339,7 @@ async function main() {
     const now = new Date()
     const asOfEn = `${now.toLocaleString('en-US', { month: 'long' })} ${now.getFullYear()}`
     const asOfEs = `${now.toLocaleString('es-ES', { month: 'long' })} de ${now.getFullYear()}`
+    const asOfIso = now.toISOString().slice(0, 10)
 
     // Patterns: careful NOT to match hero metrics entries (those already handled by section 2)
     // Match patterns like "35K+ stars", "35K+ estrellas", "35K+ ⭐", "35K+ GitHub stars"
@@ -358,6 +359,11 @@ async function main() {
       // Story page dated live counters (see asOfEn/asOfEs above)
       { re: /GitHub stars \(as of [A-Za-z]+ \d{4}\)/g, replace: `GitHub stars (as of ${asOfEn})` },
       { re: /estrellas en GitHub \(a [a-záéíóúñ]+ de \d{4}\)/g, replace: `estrellas en GitHub (a ${asOfEs})` },
+      // llms.txt (doctrina §16, search-ops): cada cifra agent-facing lleva la fecha del FETCH
+      // que la produjo. Va por FUENTE, no una global: si Reddit falla y GitHub no, una fecha
+      // compartida mentiría sobre el número que no se refrescó. Este bloque solo corre dentro
+      // de `if (careerOpsStats)`, así que la fecha nunca sobrevive a su propio fetch fallido.
+      { re: /GitHub as of \d{4}-\d{2}-\d{2}/g, replace: `GitHub as of ${asOfIso}` },
     ]
 
     // Lines that include `// HISTORIC` are protected (week-1 viral snapshot, do not auto-bump).
