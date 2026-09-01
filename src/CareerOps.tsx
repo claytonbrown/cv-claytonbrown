@@ -71,7 +71,7 @@ export default function CareerOps({ lang = 'en' }: { lang?: Lang }) {
     description: t.seo.description,
     image: 'https://santifer.io/career-ops/og-career-ops.webp',
     publishedTime: '2026-03-17',
-    modifiedTime: '2026-08-27',
+    modifiedTime: '2026-08-31',
     articleTags: 'multi-agent,job search,Claude Code,ATS,batch processing,HITL,automation',
     jsonLd: buildJsonLd(lang),
     xDefaultSlug: 'career-ops',
@@ -93,7 +93,7 @@ export default function CareerOps({ lang = 'en' }: { lang?: Lang }) {
         subtitle={t.header.subtitle}
         date={t.header.date}
         dateISO="2026-03-17"
-        dateModifiedISO="2026-08-27"
+        dateModifiedISO="2026-08-31"
         readingTime={t.readingTime}
       />
 
@@ -117,21 +117,21 @@ export default function CareerOps({ lang = 'en' }: { lang?: Lang }) {
         <PressFeatures lang={lang} />
       </div>
 
-      <GitHubRepoBadge repo="santifer/career-ops" stars="69.5K" forks="13.1K" lang={lang} />
+      <GitHubRepoBadge repo="career-ops-hq/career-ops" stars="69.7K" forks="13.2K" lang={lang} />
 
       {/* The career-ops warp chart (Warpchart) — animated SVG served as plain <img>, prerender-safe (no iframe, no hydration guard needed).
           theme=dark FIXED on purpose: site is hardcoded dark; Warpchart's dynamic day/night mode (omitting theme) follows the visitor's OS
           prefers-color-scheme, not the host page — a light-OS visitor would get a light chart on our dark page (confirmed by warpchart via IPC). */}
       <figure className="my-8">
         <a
-          href="https://warpchart.dev/r/santifer/career-ops?utm_source=santifer.io"
+          href="https://warpchart.dev/r/career-ops-hq/career-ops?utm_source=santifer.io"
           target="_blank"
           rel="noopener"
           aria-label="The career-ops warp chart on Warpchart"
           className="block hover:opacity-90 transition-opacity"
         >
           <img
-            src="https://warpchart.dev/api/chart?repo=santifer/career-ops&theme=dark&w=800&h=420"
+            src="https://warpchart.dev/api/chart?repo=career-ops-hq/career-ops&theme=dark&w=800&h=420"
             alt={t.starChart.alt}
             width={800}
             height={420}

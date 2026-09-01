@@ -1546,9 +1546,9 @@ function App() {
                   <Github className="w-3.5 h-3.5" />
                   <span>career-ops</span>
                   <Star className="w-3 h-3 text-yellow-500" />
-                  {/* hero-stats:career-ops:stars */}<span className="font-medium">69.5K</span>
+                  {/* hero-stats:career-ops:stars */}<span className="font-medium">69.7K</span>
                   <GitFork className="w-3 h-3" />
-                  {/* hero-stats:career-ops:forks */}<span>13.1K</span>
+                  {/* hero-stats:career-ops:forks */}<span>13.2K</span>
                 </Link>
               </div>
 
@@ -1595,30 +1595,6 @@ function App() {
                   </div>
                 ))}
               </div>
-            </div>
-          </AnimatedSection>
-
-          {/* Zinkee */}
-          <AnimatedSection delay={0.1}>
-            <div className="mb-20">
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mb-2">
-                <div className="flex items-center gap-3">
-                  <img src="/zinkee-logo.webp" alt="Zinkee" className="w-10 h-10 shrink-0" width={40} height={40} loading="lazy" decoding="async" />
-                  <h3 className="font-display text-2xl font-bold">{t.experience.zinkee.company}</h3>
-                </div>
-                <span className="text-sm text-muted-foreground">{t.experience.zinkee.location}</span>
-              </div>
-              <p className="text-primary font-medium mb-1">{t.experience.zinkee.role}</p>
-              <p className="text-sm text-muted-foreground mb-2">{t.experience.zinkee.period}</p>
-              <p className="text-muted-foreground whitespace-pre-line mb-4">{t.experience.zinkee.desc}</p>
-              <ul className="text-sm text-muted-foreground space-y-1">
-                {t.experience.zinkee.highlights.map((h, hi) => (
-                  <li key={hi} className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    <span>{h}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           </AnimatedSection>
 
@@ -1675,6 +1651,30 @@ function App() {
               <Link to={lang === 'en' ? '/career-ops-system' : '/career-ops'} className="inline-flex items-center gap-2 mt-6 text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-200 group/cta">
                 <span className="px-4 py-2 rounded-lg bg-primary/10 border border-primary/30 group-hover/cta:bg-primary/20 group-hover/cta:border-primary/50 transition-all duration-200">{t.experience.careerOps.caseStudyLabel}</span>
               </Link>
+            </div>
+          </AnimatedSection>
+
+          {/* Zinkee */}
+          <AnimatedSection delay={0.1}>
+            <div className="mb-20">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mb-2">
+                <div className="flex items-center gap-3">
+                  <img src="/zinkee-logo.webp" alt="Zinkee" className="w-10 h-10 shrink-0" width={40} height={40} loading="lazy" decoding="async" />
+                  <h3 className="font-display text-2xl font-bold">{t.experience.zinkee.company}</h3>
+                </div>
+                <span className="text-sm text-muted-foreground">{t.experience.zinkee.location}</span>
+              </div>
+              <p className="text-primary font-medium mb-1">{t.experience.zinkee.role}</p>
+              <p className="text-sm text-muted-foreground mb-2">{t.experience.zinkee.period}</p>
+              <p className="text-muted-foreground whitespace-pre-line mb-4">{t.experience.zinkee.desc}</p>
+              <ul className="text-sm text-muted-foreground space-y-1">
+                {t.experience.zinkee.highlights.map((h, hi) => (
+                  <li key={hi} className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span>{h}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </AnimatedSection>
 

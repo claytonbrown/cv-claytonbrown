@@ -36,7 +36,7 @@ export default function AiAgentFleet({ lang = 'en' }: { lang?: Lang }) {
     description: t.seo.description,
     image: 'https://santifer.io/ai-agent-fleet/og-ai-agent-fleet.webp',
     publishedTime: '2026-07-10',
-    modifiedTime: '2026-08-27',
+    modifiedTime: '2026-08-31',
     articleTags: 'ai agents,multi-agent,open source,maintainer,Claude Code,sdlc,context engineering',
     jsonLd: buildJsonLd(lang),
     xDefaultSlug: 'flota-agentes-ia',
@@ -223,7 +223,7 @@ export default function AiAgentFleet({ lang = 'en' }: { lang?: Lang }) {
         <H2 id="numbers">{s.numbers.heading}</H2>
         <figure className="my-8">
           <a
-            href="https://warpchart.dev/r/santifer/career-ops?utm_source=santifer.io"
+            href="https://warpchart.dev/r/career-ops-hq/career-ops?utm_source=santifer.io"
             target="_blank"
             rel="noopener"
             aria-label="The career-ops warp chart on Warpchart"
@@ -231,7 +231,7 @@ export default function AiAgentFleet({ lang = 'en' }: { lang?: Lang }) {
           >
             {/* theme=dark fixed: site is hardcoded dark, dynamic mode would follow visitor OS */}
             <img
-              src="https://warpchart.dev/api/chart?repo=santifer/career-ops&theme=dark&w=800&h=420"
+              src="https://warpchart.dev/api/chart?repo=career-ops-hq/career-ops&theme=dark&w=800&h=420"
               alt={s.numbers.warpchart.alt}
               width={800}
               height={420}

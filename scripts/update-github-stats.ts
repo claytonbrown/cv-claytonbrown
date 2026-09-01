@@ -23,7 +23,7 @@ interface BadgeConfig {
 
 // Repos with GitHubRepoBadge in article components
 const BADGE_REPOS: BadgeConfig[] = [
-  { owner: 'santifer', repo: 'career-ops', file: 'src/CareerOps.tsx', label: 'career-ops (badge)' },
+  { owner: 'career-ops-hq', repo: 'career-ops', file: 'src/CareerOps.tsx', label: 'career-ops (badge)' },
   { owner: 'santifer', repo: 'jacobo-workflows', file: 'src/JacoboAgent.tsx', label: 'jacobo-workflows (badge)' },
 ]
 
@@ -37,7 +37,7 @@ interface I18nRepo {
   extraLinks?: string[]
 }
 const I18N_REPOS: I18nRepo[] = [
-  { owner: 'santifer', repo: 'career-ops', label: 'career-ops (i18n)', extraLinks: ['career-ops.org'] },
+  { owner: 'career-ops-hq', repo: 'career-ops', label: 'career-ops (i18n)', extraLinks: ['career-ops.org'] },
   { owner: 'santifer', repo: 'warpchart', label: 'warpchart (i18n)', extraLinks: ['warpchart.dev'] },
   { owner: 'santifer', repo: 'cv-santiago', label: 'cv-santiago (i18n)' },
   { owner: 'santifer', repo: 'claude-pulse', label: 'claude-pulse (i18n)' },
@@ -240,7 +240,7 @@ async function main() {
   let appTsx = readFileSync(APP_PATH, 'utf-8')
   let appChanged = false
 
-  for (const repo of [{ owner: 'santifer', repo: 'career-ops', label: 'career-ops (hero)' }]) {
+  for (const repo of [{ owner: 'career-ops-hq', repo: 'career-ops', label: 'career-ops (hero)' }]) {
     const stats = await fetchGitHubStats(repo.owner, repo.repo)
     if (!stats) continue
 

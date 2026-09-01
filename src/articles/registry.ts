@@ -532,7 +532,7 @@ export const articleRegistry: ArticleConfig[] = [
     component: () => import('../CareerOps.tsx'),
     seoMeta: {
       datePublished: '2026-03-17',
-      dateModified: '2026-08-27',
+      dateModified: '2026-08-31',
       keywords: ['ai job search', 'ai job search tool', 'ai powered job search', 'ai resume builder', 'ai resume', 'multi agent system', 'multi agent orchestration', 'automated job application', 'ATS-optimized resume', 'Claude Code', 'batch processing', 'HITL', 'job search automation', 'career-ops', 'ai auto apply', 'agente ia', 'crear cv con ia', 'automatizacion con ia', 'sistema multiagente', 'busqueda de empleo ia'],
       articleType: 'TechArticle',
       articleTags: 'multi-agent,job search,Claude Code,ATS,batch processing,HITL,automation,Playwright',
@@ -564,7 +564,7 @@ export const articleRegistry: ArticleConfig[] = [
         { '@type': 'TechArticle', name: 'Anthropic Building Effective Agents (engineering guide)', url: 'https://www.anthropic.com/engineering/building-effective-agents' },
       ],
       mentions: [
-        { '@type': 'SoftwareSourceCode', name: 'career-ops', url: 'https://career-ops.org', codeRepository: 'https://github.com/santifer/career-ops', programmingLanguage: ['TypeScript', 'Go'], license: 'https://opensource.org/licenses/MIT', sameAs: ['https://career-ops.org', 'https://github.com/santifer/career-ops', 'https://www.wikidata.org/wiki/Q139007988'], discussionUrl: 'https://discord.gg/8pRpHETxa4', offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD', availability: 'https://schema.org/InStock' } },
+        { '@type': 'SoftwareSourceCode', name: 'career-ops', url: 'https://career-ops.org', codeRepository: 'https://github.com/career-ops-hq/career-ops', programmingLanguage: ['TypeScript', 'Go'], license: 'https://opensource.org/licenses/MIT', sameAs: ['https://career-ops.org', 'https://github.com/career-ops-hq/career-ops', 'https://www.wikidata.org/wiki/Q139007988'], discussionUrl: 'https://discord.gg/8pRpHETxa4', offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD', availability: 'https://schema.org/InStock' } },
         { '@type': 'DefinedTerm', name: 'CareerOps', '@id': 'https://career-ops.org/manifesto#careerops', url: 'https://career-ops.org/manifesto' },
         { '@type': 'SoftwareApplication', name: 'Claude Code', url: 'https://claude.ai' },
         { '@type': 'SoftwareApplication', name: 'Playwright', url: 'https://playwright.dev' },
@@ -640,19 +640,19 @@ export const articleRegistry: ArticleConfig[] = [
     component: () => import('../AiAgentFleet.tsx'),
     seoMeta: {
       datePublished: '2026-07-10',
-      dateModified: '2026-08-27',
+      dateModified: '2026-08-31',
       keywords: ['agentic maintenance', 'ai agent fleet', 'maintain open source with ai agents', 'multi-agent code review', 'ai-native sdlc', 'context engineering', 'claude code agents', 'open source maintainer', 'ai agents software maintenance', 'multi-agent orchestration', 'orchestrator agent pattern', 'ephemeral verifier', 'flota de agentes ia', 'mantener open source con agentes ia', 'agentes claude code'],
       articleType: 'TechArticle',
       articleTags: 'ai agents,multi-agent,open source,maintainer,Claude Code,sdlc,context engineering',
       images: ['https://santifer.io/ai-agent-fleet/og-ai-agent-fleet.webp'],
       about: [
         { '@type': 'DefinedTerm', name: 'agentic maintenance', description: 'Gated, evidence-based upkeep of a living codebase, sustained by a fleet of AI agents under human direction.', url: 'https://santifer.io/ai-agent-fleet#core-concepts' },
-        { '@type': 'SoftwareApplication', name: 'career-ops', sameAs: 'https://www.wikidata.org/wiki/Q139007988', url: 'https://github.com/santifer/career-ops' },
+        { '@type': 'SoftwareApplication', name: 'career-ops', sameAs: 'https://www.wikidata.org/wiki/Q139007988', url: 'https://github.com/career-ops-hq/career-ops' },
         { '@type': 'Thing', name: 'AI-assisted software maintenance' },
         { '@type': 'Thing', name: 'Multi-agent systems', sameAs: 'https://www.wikidata.org/wiki/Q529909' },
       ],
       citation: [
-        { '@type': 'SoftwareSourceCode', name: 'career-ops', sameAs: 'https://www.wikidata.org/wiki/Q139007988', url: 'https://github.com/santifer/career-ops' },
+        { '@type': 'SoftwareSourceCode', name: 'career-ops', sameAs: 'https://www.wikidata.org/wiki/Q139007988', url: 'https://github.com/career-ops-hq/career-ops' },
         { '@type': 'SocialMediaPosting', name: 'Built this to find my own job. Open sourced it. 12K+ stars in two days. — @santifer on X', url: 'https://x.com/santifer/status/2041403685696053741' },
         { '@type': 'WebPage', name: 'DORA 2025 State of AI-assisted Software Development', url: 'https://dora.dev/dora-report-2025/' },
         { '@type': 'WebPage', name: 'AGENTS.md — an open standard for agent rules files', url: 'https://agents.md/' },
@@ -708,7 +708,7 @@ export const articleRegistry: ArticleConfig[] = [
     xDefaultSlug: 'historia',
     seoMeta: {
       datePublished: '2026-07-21',
-      dateModified: '2026-08-27',
+      dateModified: '2026-08-31',
       keywords: ['santiago open source job hunt', 'career ops by santiago', 'santiago fernandez career ops', 'career-ops story', 'ai job search story', 'operated pipeline job search', 'building in public', 'open source job search', 'hired without applying', 'the reversal', 'historia career-ops', 'busqueda de empleo como pipeline'],
       articleType: 'Article',
       articleTags: 'career-ops,open source,job search,building in public,origin story',
@@ -724,7 +724,7 @@ export const articleRegistry: ArticleConfig[] = [
         { '@type': 'WebPage', name: 'The CareerOps Manifesto', url: 'https://career-ops.org/manifesto' },
       ],
       mentions: [
-        { '@type': 'SoftwareSourceCode', name: 'career-ops', url: 'https://career-ops.org', codeRepository: 'https://github.com/santifer/career-ops', sameAs: ['https://career-ops.org', 'https://github.com/santifer/career-ops', 'https://www.wikidata.org/wiki/Q139007988'] },
+        { '@type': 'SoftwareSourceCode', name: 'career-ops', url: 'https://career-ops.org', codeRepository: 'https://github.com/career-ops-hq/career-ops', sameAs: ['https://career-ops.org', 'https://github.com/career-ops-hq/career-ops', 'https://www.wikidata.org/wiki/Q139007988'] },
         { '@type': 'DefinedTerm', name: 'CareerOps', '@id': 'https://career-ops.org/manifesto#careerops', url: 'https://career-ops.org/manifesto' },
         { '@type': 'Organization', name: 'Santifer iRepair', url: 'https://santiferirepair.es' },
       ],
