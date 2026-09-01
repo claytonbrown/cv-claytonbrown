@@ -147,7 +147,7 @@ export const aiAgentFleetContent = {
           headers: ['Métrica', 'Valor'],
           rows: [
             ['Estrellas en GitHub', '69.707'],
-            ['Forks', '13.181'],
+            ['Forks', '13.182'],
             ['Contribuidores', '337'],
             ['PRs fusionadas', '1.330'],
             ['Releases desde el despegue de abril', '43 (última: v0.9.0, 31 de agosto)'],
@@ -430,7 +430,7 @@ export const aiAgentFleetContent = {
           headers: ['Metric', 'Value'],
           rows: [
             ['GitHub stars', '69,707'],
-            ['Forks', '13,181'],
+            ['Forks', '13,182'],
             ['Contributors', '337'],
             ['Merged PRs', '1,330'],
             ['Releases since the April launch', '43 (latest: v0.9.0, August 31)'],
